@@ -16,8 +16,8 @@ RUN groupadd \
         --uid ${localdev_user_id} \
         localdev
 
-WORKDIR /home/localdev/documents
-VOLUME /home/localdev/documents
+WORKDIR /home/localdev/workspace
+VOLUME /home/localdev/workspace
 USER localdev
 
 CMD ["/bin/bash"]
